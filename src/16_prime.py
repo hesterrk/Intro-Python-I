@@ -1,12 +1,18 @@
 import sys
 
+num = '1'
 
-if len(sys.argv) == 2 and int(sys.argv[1]) % 2 == 0:
-    print('Its a prime')
+if len(sys.argv) == 2:
+    num = int(sys.argv[1])
+
+    if int(num) > 1:
+        for i in range(2, num):
+         if num % i == 0:
+            print('Its NOT prime')
 
 
 elif len(sys.argv) == 1:
     print('Please enter a prime')
 
-elif int(sys.argv[1]) % 2 != 0:
-    print('not a prime number')
+elif num == 1:
+    print('its a prime number')
