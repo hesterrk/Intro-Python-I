@@ -63,3 +63,4 @@ for i in waypoints:
     print(i['lat'])
     print(i['lon'])
     print(i['name'])
+
